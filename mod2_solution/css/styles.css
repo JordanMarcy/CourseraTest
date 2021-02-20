@@ -1,3 +1,87 @@
-body {
-	color: blue;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica;
 }
+
+.row {
+	width: 100%;
+	padding: 10px;
+}
+
+.header {
+	text-align: center;
+	font-size: xx-large;
+	font-weight: bold;
+	padding-bottom: 15px;
+}
+
+.recipe	{
+	float: left;
+	
+}
+
+.container {
+	float: left;
+	border: 2px solid black;
+	background: grey;
+	margin: 10px;
+}
+
+.title {
+	border-left: 2px solid black;
+	border-bottom: 2px solid black;
+	background: red;
+	padding: 5px 15px 5px 15px;
+	font-weight: bold;
+	text-align: center;
+	float: right;
+}
+
+.title-1 {
+	background: #fcba03;
+}
+
+.title-2 {
+	background: #03fc0f;
+}
+
+.title-3 {
+	background: #db03fc;
+}
+
+.description {
+	float: right;
+	text-align: left;
+	padding: 5px;
+}
+
+
+/** Small Devices **/
+@media (max-width: 767px) {
+	.recipe {
+		width: 100%;
+	}
+}
+
+/** Medium Devices **/
+@media (min-width: 768px) and (max-width: 991px) {
+	.recipe {
+		width: 50%;
+	}
+
+	.recipe-2 {
+		width: 100%
+	}
+}
+
+/** Large Devices **/
+@media (min-width: 992px){
+	.recipe {
+		width: 33.33%;
+	}
+
+}
+
+
